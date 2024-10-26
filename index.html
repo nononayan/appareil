@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services DJ et Électronique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Services DJ & Electronique</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tarifs">Tarification</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="image active" style="background-image: url('equipment-rental.jpg');"></div>
+        <div class="image inactive" style="background-image: url('electronics-sale.jpg');"></div>
+        <div class="image inactive" style="background-image: url('dj-service.jpg');"></div>
+        <div class="container">
+            <h2>Vos événements, notre expertise</h2>
+            <p>Animation de soirées, location de matériel et vente d'appareils électroniques</p>
+            <a href="#services" class="btn">Découvrez nos services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <img src="dj-service.jpg" alt="Animation DJ">
+                    <h3>Animation d'événements</h3>
+                    <p>Anniversaires, mariages, baptêmes, et plus avec nos DJ experts.</p>
+                </div>
+                <div class="service">
+                    <img src="equipment-rental.jpg" alt="Location Matériel">
+                    <h3>Location de matériel</h3>
+                    <p>Baffles, consoles, micros, vidéoprojecteurs pour tous vos besoins.</p>
+                </div>
+                <div class="service">
+                    <img src="electronics-sale.jpg" alt="Vente Appareils">
+                    <h3>Vente d'appareils électroniques</h3>
+                    <p>Téléphones, ordinateurs, disques durs, clés USB et plus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarification Section -->
+    <section id="tarifs" class="pricing">
+        <div class="container">
+            <h2>Tarification</h2>
+            <p>Découvrez nos offres et choisissez ce qui vous convient le mieux !</p>
+            <div class="pricing-table">
+                <div class="plan">
+                    <h3>Animation DJ</h3>
+                    <p><strong>À partir de 50€</strong> / événement</p>
+                </div>
+                <div class="plan">
+                    <h3>Location de Matériel</h3>
+                    <p><strong>À partir de 30€</strong> / jour</p>
+                </div>
+                <div class="plan">
+                    <h3>Vente d'Appareils</h3>
+                    <p><strong>Prix variable</strong> selon les produits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Témoignages</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Super service pour notre mariage ! Les DJ étaient excellents, je recommande fortement !" - Marie L.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"La location du matériel a été simple et efficace, merci pour votre professionnalisme." - Jean K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p>Besoin d'informations supplémentaires ? Laissez-nous un message ou contactez-nous directement !</p>
+            
+            <!-- Informations de Contact -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h4>Adresse</h4>
+                    <p>PSG CITY, Bandjoun, Cameroun</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h4>Téléphone</h4>
+                    <p>+237697804290 / +237690651058</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h4>Email</h4>
+                    <p>contact@exemple.com</p>
+                </div>
+            </div>
+    
+            <!-- Formulaire de Contact -->
+            <form id="contactForm">
+                <input type="text" placeholder="Nom" required name="user_name">
+                <input type="email" placeholder="Email" required name="user_email">
+                <textarea placeholder="Votre message" required name="message"></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "yMlpNysqRcRx_dfT2",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
